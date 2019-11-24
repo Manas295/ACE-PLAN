@@ -1,0 +1,29 @@
+curl -X POST \
+  http://localhost:8765/trade-service/trades \
+  -H 'Accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: d71ddf6b-f0a8-4225-b01c-4e3e2726ddbc' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"quatity": 123,
+	"tradeDate": "2017 - 07 - 12 T03: 15: 00",
+	"commodity":"Gold",
+	"counterParty":"Lorem",
+	"location":"London"
+}'
+
+
+
+curl -X GET \
+  http://localhost:8765/market-data-service/price/Platinum \
+  -H 'Accept: application/json,application/json' \
+  -H 'Content-Type: application/json,application/json' \
+  -H 'Postman-Token: 549a3af3-434b-418d-b868-3d69500bddf8' \
+  -H 'cache-control: no-cache' \
+  -d '{
+	"quatity": 300,
+	"tradeDate": "2017 - 07 - 12 T03: 15: 00",
+	"commodity":"Äluminium",
+	"counterParty":"Lorem",
+	"location":"London"
+}'
